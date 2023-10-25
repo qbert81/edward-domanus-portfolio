@@ -1,0 +1,71 @@
+/* Existing styles */
+.light-blue-link {
+    color: #42a8ec;
+    text-decoration: none; /* Remove the underline by default */
+  }
+  
+  /* Style for the link when hovering (optional) */
+  .light-blue-link:hover {
+    color: #8ec6f8; /* A slightly darker shade when hovering */
+  }
+
+.work-section {
+    font-size: 18px; /* Set the desired font size */
+  font-weight: 1000; /* Set the desired font weight (700 for bold/thicker) */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .work-items {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .work-item {
+    
+    background-color: gray;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    max-height: 20px; /* Set the initial max-height to be greater than the content's height */
+  }
+  
+  .work-title {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .work-details {
+    font-size: 16px; /* Set the desired font size */
+    font-weight: 600; /* Set the desired font weight (700 for bold/thicker) */
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  /* Varying shades of gray for work items */
+  .work-item:nth-child(odd) {
+    background-color: #202020;
+  }
+  
+  .work-item:nth-child(even) {
+    background-color: #414141;
+  }
+  
+  /* Style the arrow up/down */
+  .arrow {
+    margin-left: 5px;
+  }
+  
+  /* Expanded work item with sliding animation */
+  .work-item.expanded {
+    max-height: 150px; /* Set to the same value as initial max-height to ensure smooth closing */
+  }
+  

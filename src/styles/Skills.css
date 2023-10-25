@@ -1,0 +1,93 @@
+/* src/styles/Skills.css */
+
+.video {
+  height: 60vh;
+  width:100vh
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-container {
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+   
+    background: linear-gradient(to bottom, #000000, #3d3d3d, #000000); /* Black to Light Gray to Black gradient */
+    min-height: 60vh;
+  }
+  
+  .skill-box {
+    width: 30%;
+    height: 20vh;
+    padding: 20px;
+    
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.07);
+    text-align: center;
+  }
+
+  .resume-container {
+    position: absolute;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    overflow:hidden;
+  }
+  
+  .resume-button {
+    width: 60px;
+    height: 200px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 0 10px 10px 0; /* Rounded right edge */
+    font-size: 24px;
+    cursor: pointer;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: left 0.3s ease; /* Animation for slide effect */
+    
+  }
+  .resume-button-left {
+    border-radius: 10px 0 0 10px; /* Rounded left edge */
+
+  }
+
+  .resume{
+    overflow:visible;
+    width: 150vh;
+    height: 100vh;
+    margin-top: 0vh;
+  }
+  
+  .resume-closed {
+    left: -153vh; /* Initially off-screen to the left */
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease; /* Animation for left movement */
+  }
+
+  .resume-open {
+
+    left: 0vh; /* Initially off-screen to the left */
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease; /* Animation for left movement */
+  }
+
+  .vertical-text {
+    writing-mode: vertical-rl; /* Rotate text vertically */
+    transform: rotate(180deg); /* Rotate text for cross-browser compatibility */
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin-left: 7px; /* Add spacing between text and arrow */
+    font-size: 30px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+  

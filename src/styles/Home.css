@@ -1,0 +1,59 @@
+/* src/styles/Home.css */
+
+/* Center the content vertically and horizontally */
+.section.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.subTitle {
+  color: #fdfdfd6b; /* Text color matches the outline color */
+}
+
+/* Style for the content (text) */
+.centered-text {
+  text-align: center;
+}
+
+/* Style for the arrow button container */
+.centered-arrow-container {
+  position: absolute;
+  margin-top: 60vh; /* Add margin to lower the button */
+}
+
+/* Style for the arrow button */
+.centered-arrow {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #007bff; /* Blue outline */
+  border-radius: 20px; /* Rounded corners (adjust as needed) */
+}
+
+.arrow-button {
+  font-size: 24px;
+  color: #fdfdfd; /* Text color matches the outline color */
+  animation: bounce 3s infinite; /* Apply a bouncing animation to the arrow only */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 90%, 100% {
+    transform: translateY(0px);
+  }
+  50%, 70% {
+    transform: translateY(13px);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}

@@ -30,4 +30,4 @@
     transform: translateY(140vh) rotate(calc(180deg + var(--random-rotation)));
     opacity: 0;
   }
-}/*# sourceMappingURL=TriangleRain.css.map */
+}
