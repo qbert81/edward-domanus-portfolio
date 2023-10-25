@@ -1,0 +1,47 @@
+/* styles.css */
+:root {
+  --primary-bg-color: #000000; /* Black */
+  --secondary-bg-color: #333333; /* Dark Gray */
+  --text-color: #F5F5F5; /* Light Gray */
+  --accent-color: #007ACC; /* Blue */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home {
+  color: var(--text-color);
+}
+
+.content {
+  text-align: center;
+}
+
+.skills {
+  background-color: var(--secondary-bg-color);
+}
+
+.examples {
+  background-color: var(--primary-bg-color);
+}
+
+.contact {
+  background-color: var(--secondary-bg-color);
+}
+
+.accent-color {
+  color: var(--accent-color);
+}/*# sourceMappingURL=App.css.map */
